@@ -1,0 +1,18 @@
+{
+  "name": "metasafe-eth",
+  "version": "1.0.1",
+  "description": "A tool to generate safer ethereum mnemonics / user seed phrases. ",
+  "main": "index.js",
+  "keywords": [
+    "mnemonic",
+    "ethereum",
+    "seed",
+    "phrase",
+    "bip39"
+  ],
+  "author": "metasafe <ethmetasafe@gmail.com> (https://metasafe.org)",
+  "license": "ISC",
+  "dependencies": {
+    "ethers": "^4.0.46"
+  }
+}
