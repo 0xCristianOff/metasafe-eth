@@ -1,6 +1,6 @@
 {
   "name": "metasafe-eth",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A tool to generate safer ethereum mnemonics / user seed phrases. ",
   "main": "index.js",
   "keywords": [
