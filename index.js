@@ -4,7 +4,7 @@ const words240 = require('./240words');
 checkDuplicates = names =>
   names.reduce((a, b) => ({ ...a, [b]: (a[b] || 0) + 1 }), {});
 
-analysis = async wordss => {
+analysis12 = async wordss => {
   let mnemonicValid = ethers.utils.HDNode.isValidMnemonic(wordss.join(' '));
   if (mnemonicValid === true && wordss.length === 12) {
     let duplicates = checkDuplicates(wordss);
@@ -101,7 +101,7 @@ generateMnemonic12 = async () => {
         ethers.utils.randomBytes(16)
       );
       mnemonic = mnemonic.split(' ');
-      let x = await analysis(mnemonic);
+      let x = await analysis12(mnemonic);
       if (x[0] + x[1] + x[2] === 100) {
         y = false;
         return mnemonic;
@@ -131,6 +131,7 @@ generateMnemonic24 = async () => {
 };
 
 
-
+module.exports.analysis12 = analysis12;
+module.exports.analysis24 = analysis24;
 module.exports.generateMnemonic12 = generateMnemonic12;
 module.exports.generateMnemonic24 = generateMnemonic24;
