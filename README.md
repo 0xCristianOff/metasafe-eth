@@ -8,3 +8,4 @@ https://metasafe.org standard
 
 # Documentation
 
+[Check documentation](https://metasafe.org/documentation)
